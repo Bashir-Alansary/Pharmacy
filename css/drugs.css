@@ -1,0 +1,355 @@
+/* global */
+* {
+	box-sizing: border-box;
+	font-family: tahoma, arial;
+}
+
+body {
+	padding-top: 63px;
+}
+
+.container {
+	width: 1200px;
+	margin: auto;
+}
+
+.clearfix {
+	clear: both;
+}
+
+.drugs .price {
+	font-size: 20px;
+	font-weight: bold;
+	color: #ffc500;
+	display: inline-block;
+	margin: 20px 0;
+}
+
+/* option lang color */
+.option {
+	position: fixed;
+	width: 120px;
+	height: 78px;
+	background: #ffc500;
+    padding: 10px;
+    color: #18202f;
+	margin-left: -120px;
+	z-index: 998;
+	transition: 0.7s;
+}
+
+.option:hover {
+	margin-left: 0;
+}
+
+.option i {
+	position: absolute;
+	top: 33%;
+	right: -27px;
+	display: block;
+	background: #ffc500;
+	padding: 5px;
+	color: #18202f;
+	cursor: pointer;
+}
+
+.option div:first-of-type {
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.option label {
+	margin-left: 7px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.option input {
+	color: yellow;
+}
+
+/* sign up */
+.sign {
+	position: fixed;
+	top: 72px;
+	right: 0;
+	width: 270px;
+	background: #FFC500;
+	color: #18202F;
+	padding: 20px 20px;
+	margin-right: -270px;
+	z-index: 9999;
+	transition: 0.7s;
+	text-align: center;
+}
+
+.sign .fa-user-plus {
+	position: fixed;
+    right: 67px;
+    top: 21px;
+    width: 45px;
+    height: 50px;
+    font-size: 24px;
+    color: #FFC500;
+    cursor: pointer;
+}
+
+.sign:hover {
+	margin-right: 0;
+}
+
+.sign  .fa-user-plus:hover {
+	color: #fff;
+}
+
+.sign .text h4 {
+	margin: 0;
+	padding: 0;
+	font-size: 15px;
+}
+
+.sign .text p{
+	margin: 10px 0 10px;;
+	font-size: 13px;
+	color: #455065ba;
+}
+
+.sign span {
+	display: inline-block;
+	padding: 12px 13px;
+	margin: 10px auto;
+	color: #fff;
+	background: #18202F;
+	width: 100%;
+	cursor: pointer;
+}
+
+/* navbar */
+.navbar {
+	position: fixed;
+	top: 0;
+	z-index: 1000;
+	background: #18202F;
+	width: 100%;
+}
+
+.navbar .container {
+	width: 1250px;
+}
+
+.navbar .logo {
+	width: 50%;
+	float: left;
+	color: #FFC500;
+}
+
+.navbar .logo img {
+	width: 22%;
+	margin-top: 2px;
+}
+
+.navbar .links {
+	list-style: none;
+	width: 45%;
+	float: left;
+}
+
+.navbar .links li {
+	display: block;
+	float: left;
+	padding: 9px 12px;
+	margin: 0 10px;
+	transition: all 0.5s ease;
+}
+
+.navbar .links li a {
+	font-size: 18px;
+	color: #FFC500;
+	text-decoration: none;
+}
+
+.navbar .links li a:hover{
+	color: #fff;
+}
+
+.navbar .phone {
+	float: right;
+	width: 10%;
+	font-size: 30px;
+	padding:10px;
+	display: none;
+	
+}
+
+
+/* drugs  */
+
+.drugs  {
+	background: #F7F7F7;
+	width: 1349px;
+	overflow: hidden;
+	padding: 40px;	
+}
+
+.drugs .left {
+	width: 27%;
+	float: left;
+	background: #fff;
+	height: 100%;
+}
+
+.drugs .left h2 {
+	border-bottom: 1px solid #88888842;
+	border-left: 3px solid #ffc500;
+	margin: 0;
+	padding: 20px;
+	font-size: 21px;
+	color: #18202fa6;
+}
+
+.drugs .left .bransh {
+	padding: 10px 20px 40px;
+	border-bottom: 1px solid #e4e2e2ba;
+}
+
+.drugs .left .bransh .price {
+	display: block;
+	font-size: 19px;
+}
+
+.drugs .left .bransh input {
+	font-size: 18px;
+	display: inline-block;
+	width: 40%;
+	margin-bottom: 15px;
+	border: 1px solid #18202f24;
+}
+
+.drugs .left .bransh a {
+	font-size: 17px;
+	display: inline-block;
+	text-decoration: none;
+	padding: 8px 16px;
+	background: #18202F;
+	color: #fff;
+}
+
+.drugs .left .bransh a:last-of-type {
+	margin-left: 10px;
+}
+
+.drugs .left .bransh i {
+	margin-right: 7px;
+}
+
+.drugs .right {
+	width: 70%;
+	float: left;
+	margin-left: 3%;
+	background: #fff;
+}
+
+.drugs .right .top {
+	overflow: hidden;
+	padding: 50px 20px;
+}
+
+.drugs .right .img-box {
+	width: 45%;
+	float: left;
+	text-align: center;
+}
+
+.drugs .right .img-box  img{
+	width: 80%;
+}
+
+.drugs .right .text {
+	width: 55%;
+	float: left;
+}
+
+.drugs .right .text i.fa-star:not(:last-of-type) {
+	color: #afcc36;
+}
+
+.drugs .right .text i.fa-star:last-of-type {
+	color: #18202f1f;
+}
+
+.drugs .right .text p {
+	line-height: 1.4;
+	color: #888;
+	border-bottom: 1px solid #888;
+	padding-bottom: 50px;
+	margin-top: 0;
+	font-size: 17px;
+	letter-spacing: 1.5px;
+}
+
+.drugs .right .text .media {
+	width: 70%;
+	margin: 20px auto;
+}
+
+.drugs .right .text .media i {
+	width: 45px;
+	height: 45px;
+	border: 1px solid #e1e1e4;
+	margin-right: 30px;
+	text-align: center;
+	line-height: 45px;
+	font-size: 19px;
+	color: #888;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.drugs .right .text .media i:hover {
+	border: 1px solid #18202F;
+}
+
+.drugs .right .info {
+	border-top: 30px solid #F7F7F7;
+	padding: 50px 37px 80px;
+	border-bottom: 1px solid #e4e2e2ba;
+}
+
+.drugs .right .info h2 {
+	text-align: center;
+	color: #18202F;
+	margin-bottom: 30px;
+}
+
+.drugs .right .info p {
+	text-align: center;
+	color: #888;
+	margin-bottom: 30px;
+	width: 80%;
+	margin: 30px auto;
+}
+
+.drugs .right .content div {
+	border: 1px solid #18202f2b;
+	height: 55px;
+}
+
+
+.drugs .right .content div span {
+	display: block;
+	float: left;
+	height: 100%;
+	padding-left: 20px;
+	line-height: 55px;
+	color: #18202f91;
+	font-weight: bold;
+}
+
+.drugs .right .content div .title {
+	width: 40%;
+	border-right: 1px solid #18202f2b;
+}
+
+.drugs .right .content div .desc {
+	width: 60%;
+}
